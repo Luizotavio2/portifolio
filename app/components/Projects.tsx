@@ -17,7 +17,7 @@ const projects = [
       "Este próprio portfólio desenvolvido em Next.js com tema escuro, animações suaves e design responsivo.",
     techs: ["Next.js", "React", "Framer Motion"],
     github: "https://github.com/Luizotavio2/portifolio",
-    demo: "",
+    demo: "https://portifolio-xi-five-41.vercel.app/",
   },
 ];
 
