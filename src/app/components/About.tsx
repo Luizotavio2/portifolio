@@ -25,7 +25,7 @@ export default function About() {
         className="max-w-3xl text-center text-lg md:text-xl leading-relaxed"
       >
         Olá, eu me chamo <span className="text-green-400 font-semibold">Luiz</span>. Trabalho com 
-        <span className="text-green-400">desenvolvimento de aplicações</span> automação e design de sistemas eficientes.  
+        <span className="text-green-400"> desenvolvimento de aplicações</span> automação e design de sistemas eficientes.  
         Busco unir visão tradicional e pensamento inovador para criar soluções que realmente façam a diferença.
       </motion.p>
     </section>

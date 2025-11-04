@@ -1,13 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
-import { Code2, Monitor, Database, Globe, Terminal } from "lucide-react";
+import { Code2, Braces, Monitor, Globe, Rocket } from "lucide-react";
 
 const skills = [
   { icon: <Code2 size={40} />, name: "Node js" },
-  { icon: <Database size={40} />, name: "SQL" },
   { icon: <Monitor size={40} />, name: "Next js" },
   { icon: <Globe size={40} />, name: "HTML / CSS" },
-  { icon: <Terminal size={40} />, name: "Linux" },
+  { icon: <Braces size={40} />, name: "JavaScript" },
+  { icon: <Rocket size={40} />, name: "React" },
 ];
 
 export default function Skills() {

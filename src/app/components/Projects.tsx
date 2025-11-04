@@ -19,6 +19,14 @@ const projects = [
     github: "https://github.com/Luizotavio2/portifolio",
     demo: "https://portifolio-xi-five-41.vercel.app/",
   },
+  {
+    title: "landing page vendedora afiliada",
+    description:
+      "Landing page desenvolvida para promover produtos como afiliado, com design atraente e otimizado para conversão.",
+    techs: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/Luizotavio2/catalogo-tati",
+    demo: "https://catalogo-tati.vercel.app/",
+  }
 ];
 
 export default function Projects() {
