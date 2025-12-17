@@ -1,0 +1,153 @@
+export type Language = 'pt' | 'en';
+
+export const translations = {
+  pt: {
+    nav: {
+      home: 'Home',
+      about: 'Sobre',
+      skills: 'Skills',
+      projects: 'Projetos',
+      contact: 'Contato',
+    },
+    hero: {
+      greeting: 'Olá, eu sou',
+      name: 'Luiz Otavio',
+      title: 'Desenvolvedor Web',
+      description: 'Criando experiências digitais incríveis com código limpo, design moderno e foco em resultados. Especializado em desenvolvimento web full-stack.',
+      viewProjects: 'Ver Projetos',
+      getInTouch: 'Entre em Contato',
+      scrollIndicator: 'Role para descobrir mais',
+    },
+    about: {
+      title: 'Sobre Mim',
+      name: 'Luiz Otavio',
+      greeting: 'Olá, eu me chamo',
+      description1: 'Trabalho com desenvolvimento de aplicações, automação e design de sistemas eficientes. Busco unir visão tradicional e pensamento inovador para criar soluções que realmente façam a diferença.',
+      description2: 'Minha paixão é transformar ideias em realidade através do código, sempre priorizando a experiência do usuário e a qualidade do produto final.',
+      specialties: 'Especialidades',
+      development: 'Desenvolvimento',
+      developmentDesc: 'Criação de aplicações web modernas e eficientes',
+      innovation: 'Inovação',
+      innovationDesc: 'Busco sempre as melhores práticas e tecnologias atuais',
+      results: 'Foco em Resultados',
+      resultsDesc: 'Desenvolvimento orientado a soluções que agregam valor',
+    },
+    skills: {
+      title: 'Skills & Tecnologias',
+      description: 'Tecnologias e ferramentas que domino e utilizo para criar soluções modernas e eficientes.',
+    },
+    projects: {
+      title: 'Meus Projetos',
+      description: 'Uma seleção dos projetos que desenvolvi, demonstrando minhas habilidades e experiência em desenvolvimento web.',
+      code: 'Código',
+      list: [
+        {
+          title: "Painel de Tickets Infobip",
+          description: "Dashboard interativo em HTML, CSS e JavaScript para o frontend, e axios e express para o backend. A aplicação realiza o monitoramento de tickets e SLAs com filtros por semana, mês e dia.",
+        },
+        {
+          title: "Portfólio Pessoal",
+          description: "Este portfólio desenvolvido em Next.js com tema limpo, animações suaves e design responsivo.",
+        },
+        {
+          title: "Landing Page de Afiliado",
+          description: "Landing page desenvolvida para promover produtos como afiliado, com design atraente e otimizado para conversão.",
+        },
+      ],
+    },
+    contact: {
+      title: 'Vamos Conversar',
+      description: 'Ficarei feliz em conversar sobre oportunidades, colaborações ou ideias. Envie uma mensagem ou entre em contato pelas redes sociais.',
+      name: 'Nome',
+      namePlaceholder: 'Seu nome',
+      email: 'Email',
+      emailPlaceholder: 'seu@email.com',
+      message: 'Mensagem',
+      messagePlaceholder: 'Sua mensagem...',
+      send: 'Enviar Mensagem',
+      sending: 'Enviando...',
+      success: 'Mensagem enviada com sucesso! Você será redirecionado para o seu cliente de email.',
+      orReachOut: 'Ou entre em contato por',
+      preferMethod: 'Prefere usar outro método? Encontre-me nas redes sociais abaixo.',
+    },
+    footer: {
+      copyright: 'Todos os direitos reservados',
+      backToTop: 'Voltar ao topo',
+    },
+  },
+  en: {
+    nav: {
+      home: 'Home',
+      about: 'About',
+      skills: 'Skills',
+      projects: 'Projects',
+      contact: 'Contact',
+    },
+    hero: {
+      greeting: "Hi, I'm",
+      name: 'Luiz Otavio',
+      title: 'Web Developer',
+      description: 'Creating amazing digital experiences with clean code, modern design, and results-driven approach. Specialized in full-stack web development.',
+      viewProjects: 'View Projects',
+      getInTouch: 'Get In Touch',
+      scrollIndicator: 'Scroll to discover more',
+    },
+    about: {
+      title: 'About Me',
+      name: 'Luiz Otavio',
+      greeting: 'Hi, my name is',
+      description1: 'I work with application development, automation, and efficient system design. I seek to combine traditional vision and innovative thinking to create solutions that truly make a difference.',
+      description2: 'My passion is turning ideas into reality through code, always prioritizing user experience and the quality of the final product.',
+      specialties: 'Specialties',
+      development: 'Development',
+      developmentDesc: 'Creating modern and efficient web applications',
+      innovation: 'Innovation',
+      innovationDesc: 'Always seeking the best practices and current technologies',
+      results: 'Results-Driven',
+      resultsDesc: 'Solution-oriented development that adds value',
+    },
+    skills: {
+      title: 'Skills & Technologies',
+      description: 'Technologies and tools I master and use to create modern and efficient solutions.',
+    },
+    projects: {
+      title: 'My Projects',
+      description: "A selection of projects I've developed, showcasing my skills and experience in web development.",
+      code: 'Code',
+      list: [
+        {
+          title: "Infobip Tickets Dashboard",
+          description: "Interactive dashboard built with HTML, CSS, JavaScript for the frontend, and axios and express for the backend. The application monitors tickets and SLAs with filters for week, month, and day.",
+        },
+        {
+          title: "Personal Portfolio",
+          description: "This portfolio developed with Next.js featuring a clean theme, smooth animations, and responsive design.",
+        },
+        {
+          title: "Affiliate Landing Page",
+          description: "Landing page developed to promote products as an affiliate, with attractive design optimized for conversion.",
+        },
+      ],
+    },
+    contact: {
+      title: "Let's Talk",
+      description: "I'd be happy to discuss opportunities, collaborations, or ideas. Send a message or reach out through social media.",
+      name: 'Name',
+      namePlaceholder: 'Your name',
+      email: 'Email',
+      emailPlaceholder: 'your@email.com',
+      message: 'Message',
+      messagePlaceholder: 'Your message...',
+      send: 'Send Message',
+      sending: 'Sending...',
+      success: 'Message sent successfully! You will be redirected to your email client.',
+      orReachOut: 'Or reach out through',
+      preferMethod: 'Prefer another method? Find me on social media below.',
+    },
+    footer: {
+      copyright: 'All rights reserved',
+      backToTop: 'Back to top',
+    },
+  },
+};
+
