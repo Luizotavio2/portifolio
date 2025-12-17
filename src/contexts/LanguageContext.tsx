@@ -32,7 +32,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         language,
         setLanguage,
         t: translations[language],
-        lang: language,
       }}
     >
       {children}
