@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-6 md:px-20 py-20 bg-neutral-50 text-neutral-700">
+    <section className="min-h-screen flex flex-col justify-center items-center px-4 md:px-12 lg:px-20 py-16 md:py-20 bg-neutral-50 text-neutral-700">
       <div className="w-full max-w-7xl">
         <ProjectsPageClient />
         <ProjectGrid />

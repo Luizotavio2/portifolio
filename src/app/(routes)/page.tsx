@@ -1,4 +1,4 @@
-import Hero from "@/app/components/home/Hero";
+import HomePageClient from "./HomePageClient";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,6 +12,6 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <Hero />;
+  return <HomePageClient />;
 }
 

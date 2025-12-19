@@ -5,6 +5,7 @@ export interface Project {
   github?: string;
   demo?: string;
   image?: string;
+  type: 'frontend' | 'backend' | 'fullstack';
 }
 
 export interface Skill {

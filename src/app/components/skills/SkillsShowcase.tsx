@@ -2,9 +2,10 @@
 import { motion } from "framer-motion";
 import { skills } from "@/lib/data/skills";
 import { Skill } from "@/types";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Code2, Monitor, Globe, Braces, Rocket, Database, Settings, GitBranch, Layers, Shield, TestTube, Server, Key, Lock } from "lucide-react";
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
   // Backend
   "Node.js": Code2,
   "Nest.js": Code2,
@@ -39,18 +40,9 @@ const iconMap: Record<string, any> = {
   "Go": Code2,
 };
 
-const categoryLabels = {
-  backend: "Backend",
-  architecture: "Architecture",
-  databases: "Databases",
-  testing: "Testing",
-  security: "Security",
-  devops: "DevOps / Infrastructure",
-  languages: "Languages",
-  other: "Other",
-};
-
 export default function SkillsShowcase() {
+  const { t } = useLanguage();
+  const categoryLabels = t.skills.categories;
   const skillsByCategory = skills.reduce((acc, skill) => {
     if (!acc[skill.category]) {
       acc[skill.category] = [];
@@ -72,7 +64,7 @@ export default function SkillsShowcase() {
             {categoryLabels[category as keyof typeof categoryLabels]}
           </h2>
           
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3" role="list">
             {categorySkills.map((skill, index) => {
               const Icon = iconMap[skill.name] || Code2;
               return (
@@ -84,6 +76,8 @@ export default function SkillsShowcase() {
                   className="bg-white rounded-lg p-6 border border-neutral-200 hover:border-neutral-300 transition-all shadow-sm"
                   whileHover={{ scale: 1.02, y: -4 }}
                   whileTap={{ scale: 0.98 }}
+                  role="listitem"
+                  aria-label={skill.name}
                 >
                   <div className="flex items-center gap-4">
                     <div className="text-neutral-600">

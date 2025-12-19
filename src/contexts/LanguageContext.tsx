@@ -21,6 +21,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
+  useEffect(() => {
+    // Update HTML lang attribute based on current language
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en';
+    }
+  }, [language]);
+
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem('language', lang);

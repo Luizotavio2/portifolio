@@ -17,7 +17,7 @@ export default function LanguageSwitcher() {
       onClick={toggleLanguage}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="text-2xl p-2 rounded-lg hover:bg-neutral-50 transition-colors"
+      className="text-2xl p-2 rounded-lg hover:bg-neutral-50 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2"
       aria-label={`Switch to ${language === 'pt' ? 'English' : 'Português'}`}
       title={language === 'pt' ? 'Switch to English' : 'Alternar para Português'}
     >

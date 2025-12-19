@@ -47,8 +47,9 @@ export default function Sidebar() {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsMobileOpen(true)}
-        className="fixed top-4 left-4 z-50 md:hidden p-2 bg-white rounded-lg border border-neutral-200 shadow-sm text-neutral-600 hover:text-neutral-900 transition-colors"
-        aria-label="Open menu"
+        className="fixed top-4 left-4 z-50 md:hidden p-2 bg-white rounded-lg border border-neutral-200 shadow-sm text-neutral-600 hover:text-neutral-900 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2"
+        aria-label="Abrir menu"
+        aria-expanded={isMobileOpen}
       >
         <Menu size={24} />
       </button>
@@ -76,8 +77,8 @@ export default function Sidebar() {
             <LanguageSwitcher />
             <button
               onClick={() => setIsMobileOpen(false)}
-              className="md:hidden p-1 text-neutral-600 hover:text-neutral-900 transition-colors"
-              aria-label="Close menu"
+              className="md:hidden p-1 text-neutral-600 hover:text-neutral-900 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2 rounded"
+              aria-label="Fechar menu"
             >
               <X size={20} />
             </button>
@@ -101,11 +102,12 @@ export default function Sidebar() {
                     <Link
                       href={item.href}
                       onClick={() => setIsMobileOpen(false)}
-                      className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ${
+                      className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2 ${
                         isActive
                           ? "text-neutral-900 bg-neutral-100 font-semibold"
                           : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50"
                       }`}
+                      aria-current={isActive ? "page" : undefined}
                     >
                       <Icon size={20} />
                       <span>{item.label}</span>
